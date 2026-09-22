@@ -1,0 +1,77 @@
+<!DOCTYPE html><!--Define el archivo como HTML-->
+<html lang="es"><!--Establece el idioma en español-->
+<head><!--Encabezado-->
+    <meta charset="UTF-8"><!--Permite mostrar acentos, la ñ y caracteres-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--Hace que la pagina se adapte al tamaño de pantalla de celulares-->
+    <title>Tablas en HTML</title><!--Es el titulo que aparece arriba en la pestaña del navegador-->
+</head>
+<body><!--Contenedor principal de todo el contenido visible de la pagina web-->
+    <h1>Tipos de tablas</h1><!--Titulo principal de la pagina (H1)-->
+    <p>El objetivo fundamental de las tablas en HTML sera mostrar una serie de datos en forma ordenada, organizado en filas y columnas</p>
+    <p>Para la creacion de una tabla intervienen diferentes elementos:</p>
+    <dl><!--Definition List: agrupa pares de conceptos y sus explicaciones sobre etiquetas de tablas-->
+        <dt>Table</dt><!--Definition Term: el nombre de la etiqueta principal-->
+        <dd>Es la marca de comienzo de la tabla. Este elemento requiere la marca de cierre.</dd><!--Definition Description: explicacion de la etiqueta table-->
+        <dt>Tr</dt><!--Fila de la tabla-->
+        <dd>Es la marca de comienzo de una fila. Esta marca debe estar dentro del elemento table</dd>
+        <dt>Td</dt><!--Dato de la celda-->
+        <dd>Es la marca de comeinzo de una celda. Esta marca debe estar dentro del elemento tr</dd>
+    </dl>
+    <h2>Ejemplo</h2><!--Subtitulo para la primera tabla-->
+    <table border="1"><!--Inicia la tabla el atributo border="1" le dibuja un borde visible a las celdas-->
+        <tr><!--tr crea la primera fila de la tabla-->
+            <td>Ciudad de Mexico</td><!--td celda individual con el contenido-->
+            <td>9.2 millones</td><!--Segunda celda de la misma fila-->
+        </tr><!--Cierra la primera fila-->
+        <tr><!--Inicia la segunda fila-->
+            <td>Guadalajara</td>
+            <td>4.1 millones</td>
+        </tr>
+        <tr><!--Inicia la tercera fila-->
+            <td>Monterrey</td>
+            <td>3.9 millones</td>
+        </tr>
+    </table><!--Cierra la estructura de la tabla basica-->
+    <h2>Tabla con encabezado</h2>
+    <p>La caracteristicas de esta tabla es que se le agrega a las celdas el encabezado correspondiente, esto solo aplicaria a la primera fila de la tabla con la etiqueta <em>th</em>, las demas filas usarian la etiqueta <em>td</em> con normalidad.</p>
+    <table border="1">
+        <tr><!--Fila superior destinada para los titulos de las columnas-->
+            <th>Ciudad</th><!--Table Header: celda especial de encabezado, por defecto pone el texto centrado y en negritas-->
+            <th>Cantidad de habitantes</th><!--Segundo encabezado de columna-->
+        </tr>
+        <tr><!--A partir de aqui se usan celdas normales 'td' para los datos-->
+            <td>Ciudad de Mexico</td>
+            <td>9.2 millones</td>
+        </tr>
+        <tr>
+            <td>Guadalajara</td>
+            <td>4.1 millones</td>
+        </tr>
+        <tr>
+            <td>Monterrey</td>
+            <td>3.9 millones</td>
+        </tr>
+    </table>
+    <h2>Tabla con titulo</h2>
+    <p>Para insertar un titulo a la tabla debemos incorporar el elemento caption inmediatamente despues de abrir la etiqueta <em>table</em>.</p>
+    <table border="1">
+        <caption>Poblacion de las ciudades mas concurridas de Mexico</caption><!--Caption: agrega un titulo o encabezado descriptivo unido directamente a la tabla-->
+        <tr>
+            <th>Ciudad</th>
+            <th>Cantidad de habitantes</th>
+        </tr>
+        <tr>
+            <td>Ciudad de Mexico</td>
+            <td>9.2 millones</td>
+        </tr>
+        <tr>
+            <td>Guadalajara</td>
+            <td>4.1 millones</td>
+        </tr>
+        <tr>
+            <td>Monterrey</td>
+            <td>3.9 millones</td>
+        </tr>
+    </table>
+</body><!--Se cierra el cuerpo de la página-->
+</html><!--Se cierra lo que se ve en pantalla-->
